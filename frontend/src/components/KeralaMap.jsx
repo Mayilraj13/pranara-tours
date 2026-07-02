@@ -101,8 +101,24 @@ const MAP_DESTINATIONS = [
 
 export default function KeralaMap() {
   const [selected, setSelected] = useState(MAP_DESTINATIONS[3]); // Default to Munnar
+  const [mapReady, setMapReady] = useState(false);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
+
+  // Poll for Leaflet availability to handle dynamic script loading
+  useEffect(() => {
+    if (window.L) {
+      setMapReady(true);
+      return;
+    }
+    const interval = setInterval(() => {
+      if (window.L) {
+        setMapReady(true);
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
 
   // Clean up map instance on unmount
   useEffect(() => {
@@ -116,7 +132,7 @@ export default function KeralaMap() {
 
   // Initialize and update markers
   useEffect(() => {
-    if (!window.L) return;
+    if (!mapReady || !window.L) return;
 
     if (!mapRef.current) {
       // Initialize map instance
