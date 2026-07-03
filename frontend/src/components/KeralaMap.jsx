@@ -242,15 +242,14 @@ export default function KeralaMap() {
             borderRadius: '16px',
             overflow: 'hidden',
             border: '1px solid var(--border)',
-            minHeight: '480px',
+            height: '480px',
             position: 'relative'
           }}>
             <div 
               id="real-map-container" 
               style={{
                 width: '100%',
-                height: '100%',
-                minHeight: '480px',
+                height: '480px',
                 zIndex: 1
               }}
             />
