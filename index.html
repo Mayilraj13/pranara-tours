@@ -295,6 +295,9 @@
       border-radius: 16px;
       overflow: hidden;
       transition: all .3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     .tour-card:hover {
       transform: translateY(-4px);
@@ -321,6 +324,9 @@
     }
     .tour-card-body {
       padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
     .tour-card-body h3 {
       font-size: 1.25rem;
@@ -330,13 +336,13 @@
       color: #64748b;
       font-size: 0.95rem;
       margin-bottom: 16px;
+      flex-grow: 1;
     }
     .tour-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 16px;
-      border-top: 1px solid #e2e8f0;
+      padding-top: 8px;
     }
     .tour-price {
       font-size: 1.3rem;
@@ -600,6 +606,9 @@
       padding: 28px;
       border-radius: 16px;
       border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     .testimonial-card .stars {
       color: #f59e0b;
@@ -610,6 +619,7 @@
       font-size: 0.95rem;
       font-style: italic;
       margin-bottom: 16px;
+      flex-grow: 1;
     }
     .testimonial-author {
       display: flex;

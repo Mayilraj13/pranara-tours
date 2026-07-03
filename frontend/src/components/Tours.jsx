@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { fetchTours } from '../api/client';
 
 export default function Tours() {
@@ -14,7 +15,7 @@ export default function Tours() {
 
   const getTagClass = (tag) => {
     if (!tag) return '';
-    const map = { 'popular': 'tag-popular', 'trending': 'tag-trending', 'best value': 'tag-value' };
+    const map = { 'popular': 'tag-popular', 'trending': 'tag-trending', 'best value': 'tag-value', 'new': 'tag-new', 'budget friendly': 'tag-budget', 'romantic': 'tag-romantic' };
     return map[tag.toLowerCase()] || '';
   };
 
@@ -36,7 +37,7 @@ export default function Tours() {
         <p className="section-subtitle">Handpicked experiences across Kerala's finest landscapes</p>
         <div className="tour-grid">
           {tours.map((tour) => (
-            <div className="tour-card" key={tour.id}>
+            <Link to={`/tour/${tour.id}`} className="tour-card" key={tour.id}>
               <div
                 className="tour-card-image"
                 style={{
@@ -54,8 +55,11 @@ export default function Tours() {
                   <span className="tour-price">&#8377;{tour.price.toLocaleString()} <small>/ person</small></span>
                   <span className="tour-duration">{tour.duration}</span>
                 </div>
+                <div className="tour-card-footer">
+                  <span className="view-details">View Details &rarr;</span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

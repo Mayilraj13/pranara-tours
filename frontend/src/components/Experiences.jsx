@@ -62,7 +62,10 @@ export default function Experiences() {
                 textAlign: 'left',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 cursor: 'pointer',
-                boxShadow: '0 4px 15px rgba(0,0,0,0.02)'
+                boxShadow: '0 4px 15px rgba(0,0,0,0.02)',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-6px)';
@@ -91,7 +94,7 @@ export default function Experiences() {
               </div>
 
               {/* Text Section */}
-              <div style={{ padding: '24px' }}>
+              <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                 <h3 style={{
                   fontSize: '1.3rem',
                   fontFamily: 'var(--font-heading)',
@@ -106,7 +109,7 @@ export default function Experiences() {
                   color: 'var(--text-light)',
                   lineHeight: '1.6',
                   marginBottom: '16px',
-                  minHeight: '48px'
+                  flexGrow: 1
                 }}>
                   {exp.description}
                 </p>

@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -12,16 +16,20 @@ export default function Navbar() {
 
   const scrollTo = (id) => {
     setMenuOpen(false);
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (isHome) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/#' + id);
+    }
   };
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container nav-inner">
-        <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); scrollTo('home'); }}>
+        <Link to="/" className="logo">
           Pranara
-        </a>
+        </Link>
         <button
           className={`hamburger${menuOpen ? ' open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -30,13 +38,13 @@ export default function Navbar() {
           <span></span><span></span><span></span>
         </button>
         <ul className={`nav-links${menuOpen ? ' open' : ''}`}>
-          <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollTo('about'); }}>About</a></li>
-          <li><a href="#tours" onClick={(e) => { e.preventDefault(); scrollTo('tours'); }}>Packages</a></li>
-          <li><a href="#experiences" onClick={(e) => { e.preventDefault(); scrollTo('experiences'); }}>Experiences</a></li>
-          <li><a href="#planner" onClick={(e) => { e.preventDefault(); scrollTo('planner'); }}>Planner</a></li>
-          <li><a href="#kerala-map" onClick={(e) => { e.preventDefault(); scrollTo('kerala-map'); }}>Map</a></li>
-          <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollTo('testimonials'); }}>Reviews</a></li>
-          <li><a href="#booking" className="nav-cta" onClick={(e) => { e.preventDefault(); scrollTo('booking'); }}>Book Now</a></li>
+          <li><a href={isHome ? '#about' : '/#about'} onClick={(e) => { e.preventDefault(); scrollTo('about'); }}>About</a></li>
+          <li><a href={isHome ? '#tours' : '/#tours'} onClick={(e) => { e.preventDefault(); scrollTo('tours'); }}>Packages</a></li>
+          <li><a href={isHome ? '#experiences' : '/#experiences'} onClick={(e) => { e.preventDefault(); scrollTo('experiences'); }}>Experiences</a></li>
+          <li><a href={isHome ? '#planner' : '/#planner'} onClick={(e) => { e.preventDefault(); scrollTo('planner'); }}>Planner</a></li>
+          <li><a href={isHome ? '#kerala-map' : '/#kerala-map'} onClick={(e) => { e.preventDefault(); scrollTo('kerala-map'); }}>Map</a></li>
+          <li><a href={isHome ? '#testimonials' : '/#testimonials'} onClick={(e) => { e.preventDefault(); scrollTo('testimonials'); }}>Reviews</a></li>
+          <li><Link to="/#booking" className="nav-cta" onClick={() => setMenuOpen(false)}>Book Now</Link></li>
         </ul>
       </div>
     </nav>

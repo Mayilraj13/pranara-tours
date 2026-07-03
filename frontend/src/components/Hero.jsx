@@ -31,7 +31,10 @@ export default function Hero() {
       <div className="hero-overlay"></div>
       <div className="hero-mist"></div>
       <div className="hero-content">
-        <div className="hero-badge">&#127748; Explore Kerala</div>
+        <div className="hero-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Explore Kerala
+        </div>
         <h1>
           Explore the Magic of<br />
           <span>Kerala</span> with Pranara
@@ -48,7 +51,8 @@ export default function Hero() {
               document.getElementById('planner')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            &#128073; Plan My Trip
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            Plan My Trip
           </a>
           <a
             href="#tours"
@@ -58,11 +62,14 @@ export default function Hero() {
               document.getElementById('tours')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            &#128065; Explore Packages
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Explore Packages
           </a>
         </div>
       </div>
-      <div className="scroll-indicator">&#8964;</div>
+      <div className="scroll-indicator">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
     </section>
   );
 }

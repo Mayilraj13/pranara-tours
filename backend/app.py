@@ -72,27 +72,403 @@ _fallback_db = {
     "tours": [
         {
             "id": 1, "title": "Munnar 2 Days 1 Night",
-            "description": "A quick escape to the misty tea gardens, viewpoints, and waterfalls of Munnar. Perfect for weekend travelers.",
+            "subtitle": "Weekend Gateway to the Misty Hills",
+            "description": "A quick escape to the misty tea gardens, viewpoints, and waterfalls of Munnar. Perfect for weekend travelers seeking tranquility and breathtaking landscapes.",
             "price": 4999, "duration": "2 Days 1 Night", "tag": "Weekend Gateway", "featured": True,
             "image_url": "/assets/tour_munnar.png",
+            "rating": 4.8, "reviews": 124,
+            "max_people": 10,
+            "difficulty": "Easy",
+            "meeting_point": "Kochi Airport / Railway Station",
+            "cancellation": "Free cancellation up to 48 hours before the trip",
+            "highlights": [
+                "Visit the famous Tea Museum and sprawling tea estates",
+                "Sunrise at Kolukkumalai — highest tea plantation in the world",
+                "Explore Eravikulam National Park and spot Nilgiri Tahrs",
+                "Scenic drive through hairpin bends with misty valley views",
+                "Photo stop at Mattupetty Dam and Echo Point"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Arrival & Munnar Exploration", "description": "Pickup from Kochi (airport/railway). Scenic 3.5 hr drive to Munnar through winding hills. Check into a premium resort. Afternoon visit to Tea Museum and a guided walk through the tea plantations. Evening at leisure — enjoy the cool mountain breeze. Overnight at resort in Munnar."},
+                {"day": 2, "title": "Sunrise & Departure", "description": "Early morning visit to Kolukkumalai for a stunning sunrise above the clouds. Return for breakfast. Visit Mattupetty Dam and Echo Point. After checkout, drive back to Kochi with drop-off at airport/railway station by evening."}
+            ],
+            "inclusions": [
+                "Accommodation in a premium resort (1 night)", "All breakfast and dinner meals",
+                "Private AC vehicle throughout the trip", "Professional English-speaking guide",
+                "All permit charges and parking fees", "Pickup and drop-off from Kochi"
+            ],
+            "exclusions": [
+                "Entry fees to attractions (approx ₹200-500)", "Lunch and personal expenses",
+                "Camera fees at monuments", "Tips and gratuities",
+                "Anything not mentioned in inclusions"
+            ],
+            "faqs": [
+                {"q": "Is this suitable for solo travelers?", "a": "Absolutely! We welcome solo travelers. The group size is kept small for a personal experience."},
+                {"q": "What should I pack?", "a": "Light woolens (Munnar can get chilly), comfortable walking shoes, sunscreen, an umbrella, and a camera."},
+                {"q": "Is pickup available from other locations?", "a": "Yes, we can arrange pickup from anywhere in Kochi — hotels, airport, or railway station."}
+            ]
         },
         {
             "id": 2, "title": "Munnar + Thekkady",
-            "description": "Explore the rolling hills of Munnar combined with wildlife safari, spice plantation tours, and boating in Thekkady.",
+            "subtitle": "Hills & Wildlife Combo",
+            "description": "Explore the rolling hills of Munnar combined with wildlife safari, spice plantation tours, and boating in Thekkady. A perfect blend of nature and adventure.",
             "price": 7999, "duration": "3 Days 2 Nights", "tag": "Popular", "featured": True,
             "image_url": "/assets/tour_thekkady.png",
+            "rating": 4.9, "reviews": 89,
+            "max_people": 8,
+            "difficulty": "Moderate",
+            "meeting_point": "Kochi Airport / Railway Station",
+            "cancellation": "Free cancellation up to 48 hours before the trip",
+            "highlights": [
+                "Boat safari on Periyar Lake to spot wild elephants and bisons",
+                "Guided tour through aromatic spice plantations",
+                "Sunrise at Kolukkumalai Tea Estate",
+                "Bamboo rafting in Thekkady's reserve forests",
+                "Kathakali cultural performance in the evening"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Kochi to Munnar", "description": "Pickup from Kochi. Drive to Munnar (3.5 hrs). Check into resort. Afternoon visit to Tea Museum and plantations. Evening walk through the local market. Overnight at Munnar."},
+                {"day": 2, "title": "Munnar to Thekkady", "description": "Early Kolukkumalai sunrise visit. Breakfast and checkout. Drive to Thekkady (3 hrs). Check into resort. Afternoon spice plantation tour. Evening boat safari on Periyar Lake. Kathakali show. Overnight at Thekkady."},
+                {"day": 3, "title": "Thekkady & Departure", "description": "Morning bamboo rafting or nature trek. Breakfast and checkout. Visit a spice shop for authentic Kerala spices. Drive back to Kochi. Drop-off by evening."}
+            ],
+            "inclusions": [
+                "Accommodation in premium resorts (2 nights)", "All breakfast and dinner meals",
+                "Private AC vehicle throughout", "Professional guide for Munnar and Thekkady",
+                "Periyar Lake boat safari tickets", "Spice plantation tour",
+                "Pickup and drop-off from Kochi"
+            ],
+            "exclusions": [
+                "Entry fees to Kolukkumalai and Tea Museum", "Lunch and personal expenses",
+                "Kathakali show tickets (₹300-500)", "Bamboo rafting charges",
+                "Tips and gratuities"
+            ],
+            "faqs": [
+                {"q": "Will we see wild animals in Thekkady?", "a": "The boat safari offers excellent chances to spot elephants, wild boars, bisons, and various bird species in their natural habitat."},
+                {"q": "Is the driving distance comfortable?", "a": "Yes, each segment is 3-3.5 hours with scenic stops along the way. All our vehicles are spacious and comfortable."}
+            ]
         },
         {
             "id": 3, "title": "Munnar + Alleppey",
-            "description": "The quintessential Kerala tour. Walk the misty hills of Munnar and stay overnight in a premium houseboat on Alleppey's backwaters.",
+            "subtitle": "Hills & Backwaters in One Trip",
+            "description": "The quintessential Kerala tour. Walk the misty hills of Munnar and stay overnight in a premium houseboat on Alleppey's serene backwaters.",
             "price": 11999, "duration": "4 Days 3 Nights", "tag": "Trending", "featured": True,
             "image_url": "/assets/tour_alleppey.png",
+            "rating": 4.9, "reviews": 156,
+            "max_people": 6,
+            "difficulty": "Easy",
+            "meeting_point": "Kochi Airport / Railway Station",
+            "cancellation": "Free cancellation up to 72 hours before the trip",
+            "highlights": [
+                "Overnight stay in a luxury houseboat on Alleppey backwaters",
+                "Sunrise at Kolukkumalai — highest tea estate in the world",
+                "Visit Eravikulam National Park and spot the rare Nilgiri Tahr",
+                "Candlelight dinner on the houseboat deck under the stars",
+                "Traditional Kerala dinner served on the houseboat"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Kochi to Munnar", "description": "Pickup from Kochi. Scenic drive to Munnar. Check into resort. Afternoon visit to Tea Museum and plantation walks. Overnight at Munnar resort."},
+                {"day": 2, "title": "Munnar Exploration", "description": "Early morning Kolukkumalai sunrise trek. Return for breakfast. Visit Eravikulam National Park, Mattupetty Dam, and Echo Point. Evening leisure at resort. Overnight at Munnar."},
+                {"day": 3, "title": "Munnar to Alleppey", "description": "Breakfast and checkout. Drive to Alleppey (4 hrs). Board a premium houseboat by noon. Cruise through the scenic backwaters, enjoy lunch and sunset onboard. Overnight on the houseboat."},
+                {"day": 4, "title": "Alleppey & Departure", "description": "Breakfast on the houseboat. Disembark by 9 AM. Optional visit to Alleppey beach or back to Kochi for drop-off."}
+            ],
+            "inclusions": [
+                "2 nights accommodation in premium resort (Munnar)", "1 night in luxury houseboat (Alleppey)",
+                "All meals as per itinerary — breakfast, lunch, dinner", "Private AC vehicle throughout",
+                "English-speaking guide for all sightseeing", "Houseboat crew including chef",
+                "Pickup and drop-off from Kochi"
+            ],
+            "exclusions": [
+                "Entry fees to national parks and monuments", "Camera fees at attractions",
+                "Personal expenses and shopping", "Tips and gratuities",
+                "Lunch on day 1 and day 4"
+            ],
+            "faqs": [
+                {"q": "Is the houseboat private?", "a": "Yes, the houseboat is exclusively for your group. It comes with a dedicated crew including a chef and a captain."},
+                {"q": "What if I travel alone?", "a": "Solo travelers are welcome. You may be paired with a small group or opt for a private houseboat at a supplemental cost."},
+                {"q": "Can we customize the itinerary?", "a": "Absolutely! We can add or remove destinations and adjust the duration as per your preferences."}
+            ]
         },
         {
             "id": 4, "title": "Complete Kerala Tour",
+            "subtitle": "The Ultimate Kerala Experience",
             "description": "A comprehensive journey covering Munnar, Thekkady wildlife sanctuary, Alleppey backwaters, and the stunning beaches of Varkala and Kovalam.",
             "price": 24999, "duration": "7 Days 6 Nights", "tag": "Best Value", "featured": True,
             "image_url": "/assets/tour_kerala.png",
+            "rating": 5.0, "reviews": 203,
+            "max_people": 8,
+            "difficulty": "Moderate",
+            "meeting_point": "Kochi Airport / Railway Station",
+            "cancellation": "Free cancellation up to 7 days before the trip",
+            "highlights": [
+                "7-day grand tour across 5 iconic Kerala destinations",
+                "Houseboat night on Alleppey backwaters with gourmet dinner",
+                "Wildlife boat safari at Periyar Tiger Reserve, Thekkady",
+                "Sunrise at Kolukkumalai — highest tea estate in the world",
+                "Beach sunset at Varkala cliff and Kovalam lighthouse",
+                "Spice plantation tour and authentic Kerala cooking demo",
+                "Kathakali performance and Ayurvedic spa session"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Arrival in Kochi — Drive to Munnar", "description": "Pickup from Kochi airport or railway station. Scenic drive to Munnar (3.5 hrs). Check into a premium hill resort. Evening walk through tea gardens and local market. Overnight at Munnar."},
+                {"day": 2, "title": "Munnar — Full Day Exploration", "description": "Pre-dawn departure to Kolukkumalai for sunrise. Return for breakfast. Visit Eravikulam National Park, Tea Museum, Mattupetty Dam, and Echo Point. Overnight at Munnar."},
+                {"day": 3, "title": "Munnar to Thekkady", "description": "Breakfast and checkout. Drive to Thekkady (3 hrs). Check into resort. Afternoon spice plantation tour with aroma tasting. Evening boat safari on Periyar Lake. Kathakali show. Overnight at Thekkady."},
+                {"day": 4, "title": "Thekkady to Alleppey", "description": "Morning bamboo rafting or nature trek. Breakfast and checkout. Drive to Alleppey (4 hrs). Board premium houseboat. Cruise through backwaters with lunch and sunset dinner. Overnight on houseboat."},
+                {"day": 5, "title": "Alleppey to Varkala", "description": "Breakfast on houseboat. Disembark. Drive to Varkala (3 hrs). Check into cliff-top resort. Afternoon at Varkala beach — swim and explore the cliffside cafes. Sunset on the cliff. Overnight at Varkala."},
+                {"day": 6, "title": "Varkala to Kovalam", "description": "Leisurely breakfast. Drive to Kovalam (1.5 hrs). Check into beach resort. Ayurvedic spa session. Visit Lighthouse Beach and Hawah Beach. Evening farewell dinner. Overnight at Kovalam."},
+                {"day": 7, "title": "Departure from Trivandrum", "description": "Breakfast at resort. Leisure time at the beach. Checkout and drop at Trivandrum International Airport or Railway Station. Tour ends with wonderful memories."}
+            ],
+            "inclusions": [
+                "6 nights accommodation across premium properties", "All breakfast and dinner meals",
+                "1 night in luxury houseboat with all meals", "Private AC vehicle for entire trip",
+                "English-speaking guide throughout", "All boat safaris and national park entry fees",
+                "Kathakali show tickets", "Ayurvedic spa session (1 per person)",
+                "Kerala cooking demonstration", "Pickup from Kochi, drop at Trivandrum"
+            ],
+            "exclusions": [
+                "Lunch on most days (available at cafes along the way)", "Camera fees at monuments and parks",
+                "Personal shopping and expenses", "Tips and gratuities",
+                "Airfare or train fare to/from Kerala"
+            ],
+            "faqs": [
+                {"q": "Can I join the tour midway?", "a": "We recommend starting from Day 1, but we can arrange pickup at any point along the route with prior coordination."},
+                {"q": "Are single rooms available?", "a": "Yes, single occupancy is available at a supplemental cost. Please mention this during booking."},
+                {"q": "What is the best season for this tour?", "a": "September to May is ideal. The monsoon season (June-August) offers lush greenery but some water activities may be limited."},
+                {"q": "Is travel insurance included?", "a": "Travel insurance is not included but we strongly recommend purchasing it for international travelers."}
+            ]
+        },
+        {
+            "id": 5, "title": "Wayanad 2 Days 1 Night",
+            "subtitle": "Misty Hills & Ancient Caves",
+            "description": "Escape to Wayanad's lush green landscapes, ancient Edakkal caves, stunning waterfalls like Meenmutty and Soochipara, and spot wild elephants at Muthanga Wildlife Sanctuary.",
+            "price": 5499, "duration": "2 Days 1 Night", "tag": "New", "featured": True,
+            "image_url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80",
+            "rating": 4.7, "reviews": 78,
+            "max_people": 10,
+            "difficulty": "Easy",
+            "meeting_point": "Kozhikode Airport / Railway Station",
+            "cancellation": "Free cancellation up to 24 hours before the trip",
+            "highlights": [
+                "Explore the 6000-year-old Edakkal Caves with ancient petroglyphs",
+                "Trek to Meenmutty and Soochipara waterfalls for a refreshing dip",
+                "Jeep safari at Muthanga Wildlife Sanctuary — spot elephants and deer",
+                "Visit the scenic Pookode Lake and pedal boat in green surroundings",
+                "Walk through sprawling tea and spice plantations"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Kozhikode to Wayanad", "description": "Pickup from Kozhikode airport/railway. Scenic 2.5 hr drive to Wayanad through winding ghat roads. Check into a nature resort. Afternoon visit to Pookode Lake and Lakkidi viewpoint. Evening guided walk through a spice plantation. Overnight at Wayanad resort."},
+                {"day": 2, "title": "Waterfalls & Departure", "description": "Early morning trek to Meenmutty Waterfalls. Return for breakfast. Visit Edakkal Caves for a peek into Neolithic history. After checkout, optional quick stop at a local organic market. Drop-off at Kozhikode by evening."}
+            ],
+            "inclusions": [
+                "Accommodation in a nature resort (1 night)", "All breakfast and dinner meals",
+                "Private AC vehicle throughout the trip", "Professional guide for Edakkal Caves",
+                "All permit charges and parking fees", "Pickup and drop-off from Kozhikode"
+            ],
+            "exclusions": [
+                "Entry fees to Edakkal Caves and Muthanga sanctuary", "Lunch and personal expenses",
+                "Jeep safari charges at Muthanga", "Camera fees at caves",
+                "Tips and gratuities"
+            ],
+            "faqs": [
+                {"q": "Is the trek to Meenmutty difficult?", "a": "The trek is moderate — about 2 km through forest terrain. Comfortable walking shoes are recommended."},
+                {"q": "What is the best time to visit Wayanad?", "a": "October to May is ideal. The monsoons (June-September) make waterfalls magnificent but forest treks may be restricted."}
+            ]
+        },
+        {
+            "id": 6, "title": "Alleppey Houseboat Experience",
+            "subtitle": "Float Through Paradise",
+            "description": "Spend a luxurious overnight stay on a traditional Kettuvallam houseboat drifting through Alleppey's serene palm-fringed backwaters with gourmet Kerala meals onboard.",
+            "price": 8999, "duration": "2 Days 1 Night", "tag": "Popular", "featured": True,
+            "image_url": "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600&q=80",
+            "rating": 4.9, "reviews": 212,
+            "max_people": 6,
+            "difficulty": "Easy",
+            "meeting_point": "Alleppey Boat Jetty / Kochi",
+            "cancellation": "Free cancellation up to 48 hours before the trip",
+            "highlights": [
+                "Overnight stay in a premium air-conditioned houseboat",
+                "Gourmet Kerala lunch, sunset tea, and dinner onboard",
+                "Cruise through the scenic Vembanad Lake and narrow canal villages",
+                "Sunset views from the open deck with complimentary beverages",
+                "Morning canoe ride through the small village canals"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Boarding & Backwater Cruise", "description": "Pickup from Kochi or Alleppey. Board your private houseboat by noon. Welcome drink and safety briefing. Cruise through the scenic Punnamada Lake and narrow palm-fringed canals. Watch local village life along the banks. Kerala-style lunch served onboard. Evening sunset cruise. Candlelight dinner under the stars. Overnight on the houseboat."},
+                {"day": 2, "title": "Morning Cruise & Departure", "description": "Early morning traditional canoe ride through small village canals. Breakfast onboard. Disembark by 9 AM. Optional visit to Alleppey beach or Kumarakom bird sanctuary. Drop-off at Kochi or Alleppey."}
+            ],
+            "inclusions": [
+                "1 night in a luxury AC houseboat", "All meals — welcome drink, lunch, tea, dinner, breakfast",
+                "Private houseboat with dedicated crew (captain, chef, helper)", "Canoe ride through village canals",
+                "Pickup and drop-off from Kochi or Alleppey", "All houseboat taxes and service charges"
+            ],
+            "exclusions": [
+                "Alcoholic beverages (available at extra cost)", "Personal expenses and shopping",
+                "Tips for houseboat crew", "Transportation outside of pickup/drop-off",
+                "Entry fees to Kumarakom bird sanctuary if visiting"
+            ],
+            "faqs": [
+                {"q": "Is the houseboat private for couples?", "a": "Yes, each booking gets a private houseboat. Perfect for couples, families, or small groups."},
+                {"q": "What if it rains?", "a": "Houseboats are fully covered with a/c bedrooms and a shaded deck. Rain actually enhances the beauty of the backwaters!"},
+                {"q": "Can we customize the menu?", "a": "Absolutely. Let us know dietary preferences or allergies at booking and the chef will customize the meals."}
+            ]
+        },
+        {
+            "id": 7, "title": "Vagamon Weekend Getaway",
+            "subtitle": "Serenity in the Pine Forests",
+            "description": "Unwind in Vagamon's pristine pine forests, rolling green meadows, and misty hills. Perfect for a quiet weekend surrounded by nature far from the crowds.",
+            "price": 3999, "duration": "2 Days 1 Night", "tag": "Budget Friendly", "featured": True,
+            "image_url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=600&q=80",
+            "rating": 4.6, "reviews": 65,
+            "max_people": 12,
+            "difficulty": "Easy",
+            "meeting_point": "Kochi Airport / Railway Station",
+            "cancellation": "Free cancellation up to 24 hours before the trip",
+            "highlights": [
+                "Walk through the famous Vagamon Pine Forest — straight out of a movie",
+                "Paragliding over the green meadows (optional add-on)",
+                "Visit the scenic Thangal Hill and Ulipooni Rock viewpoint",
+                "Explore the Marmala Waterfall hidden in dense forest",
+                "Campfire and barbecue dinner at the resort"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Kochi to Vagamon", "description": "Pickup from Kochi. Drive to Vagamon (2.5 hrs). Check into a hillside resort surrounded by pine forests. Afternoon visit to Vagamon Pine Forest for a peaceful walk. Evening at Thangal Hill viewpoint for sunset. Campfire with barbecue dinner at the resort. Overnight at Vagamon."},
+                {"day": 2, "title": "Meadows & Departure", "description": "Early morning visit to Ulipooni Hill for panoramic views of the valley. Return for breakfast. Optional paragliding session (at own cost). Visit Marmala Waterfall for a quick swim. After checkout, drive back to Kochi with drop-off by evening."}
+            ],
+            "inclusions": [
+                "Accommodation in a hillside resort (1 night)", "Breakfast and barbecue dinner",
+                "Private AC vehicle throughout", "Campfire arrangement",
+                "All permit charges", "Pickup and drop-off from Kochi"
+            ],
+            "exclusions": [
+                "Paragliding charges (approx ₹1,500)", "Lunch and personal expenses",
+                "Entry fees to Marmala Waterfall", "Tips and gratuities"
+            ],
+            "faqs": [
+                {"q": "Is Vagamon safe for solo female travelers?", "a": "Absolutely. Vagamon is very safe and peaceful. Our guides accompany you throughout."},
+                {"q": "How is the mobile network in Vagamon?", "a": "Network is available in town areas but may be patchy in the pine forest — perfect for a digital detox!"}
+            ]
+        },
+        {
+            "id": 8, "title": "Kovalam Beach Holiday",
+            "subtitle": "Sun, Sand & Ayurveda",
+            "description": "Relax on Kovalam's iconic crescent beaches — Lighthouse Beach, Hawah Beach, and Samudra Beach. Combine sunbathing with Ayurvedic spa treatments and seafood dinners.",
+            "price": 6999, "duration": "3 Days 2 Nights", "tag": "Trending", "featured": True,
+            "image_url": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&q=80",
+            "rating": 4.7, "reviews": 142,
+            "max_people": 8,
+            "difficulty": "Easy",
+            "meeting_point": "Trivandrum International Airport",
+            "cancellation": "Free cancellation up to 48 hours before the trip",
+            "highlights": [
+                "Relax on the three iconic beaches of Kovalam — Lighthouse, Hawah, Samudra",
+                "Rejuvenating Ayurvedic massage session (1 hour included)",
+                "Fresh seafood dinner at a cliffside restaurant overlooking the Arabian Sea",
+                "Visit the Vizhinjam Marine Aquarium and fishing port",
+                "Sunset at the red-and-white Kovalam Lighthouse"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Arrival & Beach Relaxation", "description": "Pickup from Trivandrum International Airport. Drive to Kovalam (30 mins). Check into a beachfront resort. Afternoon at Lighthouse Beach — swim, sunbathe, and explore. Evening walk along the cliffside shops and cafes. Seafood dinner at a cliff restaurant with sunset views. Overnight at Kovalam."},
+                {"day": 2, "title": "Ayurveda & Exploration", "description": "Morning Ayurvedic massage session at the resort. Late breakfast. Visit Vizhinjam Marine Aquarium and the bustling fishing harbor. Afternoon at Hawah Beach. Evening climb to the lighthouse for panoramic sunset views. Overnight at Kovalam."},
+                {"day": 3, "title": "Leisure & Departure", "description": "Leisurely breakfast. Free time at Samudra Beach — less crowded and pristine. Checkout by noon. Drop-off at Trivandrum airport or railway station. Tour ends."}
+            ],
+            "inclusions": [
+                "2 nights accommodation in beachfront resort", "All breakfast meals",
+                "1 Ayurvedic massage session per person", "Private AC vehicle throughout",
+                "All permit charges and parking", "Pickup from Trivandrum airport, drop-off at Trivandrum"
+            ],
+            "exclusions": [
+                "Lunch and dinner meals (many excellent cafes nearby)", "Lighthouse entry fee",
+                "Vizhinjam Aquarium entry fee", "Personal expenses and shopping",
+                "Tips and gratuities"
+            ],
+            "faqs": [
+                {"q": "Which is the best beach in Kovalam?", "a": "Lighthouse Beach is the most popular with great cafes. Hawah Beach is quieter, and Samudra Beach is the most secluded."},
+                {"q": "Is Kovalam good for families?", "a": "Yes! The beaches have gentle waves safe for children, and the resort has family-friendly amenities."}
+            ]
+        },
+        {
+            "id": 9, "title": "Munnar Honeymoon Special",
+            "subtitle": "Romance in the Mist",
+            "description": "A curated romantic escape for couples featuring luxury hilltop stays, private candlelight dinners, couple's spa treatments, and exclusive sunset-viewpoint experiences in Munnar.",
+            "price": 9999, "duration": "3 Days 2 Nights", "tag": "Romantic", "featured": True,
+            "image_url": "https://images.unsplash.com/photo-1506461883276-594a12b11cf4?w=600&q=80",
+            "rating": 5.0, "reviews": 189,
+            "max_people": 2,
+            "difficulty": "Easy",
+            "meeting_point": "Kochi Airport / Railway Station",
+            "cancellation": "Free cancellation up to 72 hours before the trip",
+            "highlights": [
+                "Luxury resort stay with a private balcony overlooking tea gardens",
+                "Private candlelight dinner arranged at the resort",
+                "Couple's Ayurvedic massage session",
+                "Sunrise at Kolukkumalai — walk above the clouds together",
+                "Horse carriage ride through the tea plantations",
+                "Complimentary couple photoshoot at the tea gardens"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Arrival & Romantic Check-in", "description": "Pickup from Kochi. Scenic drive to Munnar. Welcome with fresh flowers and a fruit basket at the resort. Check into a luxury suite with valley-view balcony. Afternoon horse carriage ride through tea plantations. Evening couple's spa session. Private candlelight dinner on the resort lawn. Overnight at Munnar."},
+                {"day": 2, "title": "Tea Gardens & Sunset", "description": "Pre-dawn departure to Kolukkumalai for a magical sunrise. Return for elaborate breakfast. Visit Eravikulam National Park hand-in-hand. Afternoon couple photoshoot at the tea gardens. Evening at Mattupetty Dam with a walk along the lake. Romantic dinner at a cliffside restaurant. Overnight at Munnar."},
+                {"day": 3, "title": "Leisurely Morning & Departure", "description": "Breakfast in bed option. Late checkout. Visit the Tea Museum for a souvenir. Drive back to Kochi with a stop at Cheeyappara Waterfalls for photos. Drop-off at Kochi airport or railway station."}
+            ],
+            "inclusions": [
+                "2 nights in a luxury suite with valley view", "All breakfast meals",
+                "Private candlelight dinner (once during stay)", "Couple's Ayurvedic massage (1 session)",
+                "Complimentary couple photoshoot (10 edited photos)", "Horse carriage ride through tea gardens",
+                "Private AC vehicle throughout", "Fresh flower bouquet and fruit basket on arrival",
+                "Pickup and drop-off from Kochi"
+            ],
+            "exclusions": [
+                "Kolukkumalai entry fees", "Eravikulam National Park entry fees",
+                "Lunch meals", "Personal expenses and shopping",
+                "Tips and gratuities"
+            ],
+            "faqs": [
+                {"q": "Is this package only for honeymoon couples?", "a": "It's designed for couples celebrating love — honeymooners, anniversary couples, or romantic getaways."},
+                {"q": "Can we upgrade to a private pool villa?", "a": "Yes, we have premium villa options available at an additional cost. Let us know at booking."},
+                {"q": "Are the photos professionally edited?", "a": "Yes, a professional photographer accompanies the shoot and delivers 10 high-resolution edited photos."}
+            ]
+        },
+        {
+            "id": 10, "title": "Kerala North Explorer",
+            "subtitle": "Wayanad, Kozhikode & Bekal",
+            "description": "Explore the unexplored beauty of North Kerala — the misty hills of Wayanad, the historic spice town of Kozhikode, and the breathtaking Bekal Fort on the Arabian coast.",
+            "price": 14999, "duration": "5 Days 4 Nights", "tag": "New", "featured": True,
+            "image_url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80",
+            "rating": 4.8, "reviews": 56,
+            "max_people": 8,
+            "difficulty": "Moderate",
+            "meeting_point": "Kozhikode Airport / Railway Station",
+            "cancellation": "Free cancellation up to 7 days before the trip",
+            "highlights": [
+                "Explore the 6000-year-old Edakkal Caves in Wayanad",
+                "Walk through the historic Kozhikode spice markets and SM Street",
+                "Visit the majestic Bekal Fort — the largest fort in Kerala",
+                "Overnight stay at a beach resort near Bekal",
+                "Sunset at Kappad Beach — where Vasco da Gama first landed",
+                "Cruise along the Valiyaparamba backwaters in Kasaragod"
+            ],
+            "itinerary": [
+                {"day": 1, "title": "Arrival in Kozhikode — Drive to Wayanad", "description": "Pickup from Kozhikode airport/railway. Brief city tour — visit SM Street, the ancient spice market, and Kallayi timber port. Lunch at a traditional Kerala restaurant. Drive to Wayanad (2.5 hrs). Check into resort. Evening at leisure. Overnight at Wayanad."},
+                {"day": 2, "title": "Wayanad Full Day", "description": "Early morning trek to Edakkal Caves. Breakfast at resort. Visit Pookode Lake, Lakkidi viewpoint, and Soochipara Waterfalls. Evening spice plantation tour. Overnight at Wayanad."},
+                {"day": 3, "title": "Wayanad to Kozhikode to Bekal", "description": "Breakfast and checkout. Drive to Kozhikode (2.5 hrs). Visit Kappad Beach and the Pazhassiraja Museum. Lunch at a beachfront cafe. Continue drive to Bekal (2 hrs). Check into beach resort. Evening at Bekal Beach. Overnight at Bekal."},
+                {"day": 4, "title": "Bekal Fort & Backwaters", "description": "Morning guided tour of the magnificent Bekal Fort overlooking the Arabian Sea. Breakfast at the fort cafe. Late morning Valiyaparamba backwater cruise with lunch onboard. Evening shopping at the local Bekal market for kasavu sarees and spices. Farewell dinner at the resort. Overnight at Bekal."},
+                {"day": 5, "title": "Departure", "description": "Breakfast at the resort. Checkout. Drive to Mangalore International Airport (1.5 hrs) or Kozhikode airport (2.5 hrs) for departure. Tour ends."}
+            ],
+            "inclusions": [
+                "4 nights accommodation — 2 in Wayanad, 2 in Bekal", "All breakfast and dinner meals",
+                "Valiyaparamba backwater cruise with lunch", "Private AC vehicle throughout",
+                "English-speaking guide for Wayanad and Bekal", "All permit charges",
+                "Pickup from Kozhikode, drop-off at Mangalore/Kozhikode"
+            ],
+            "exclusions": [
+                "Entry fees to Edakkal Caves and Bekal Fort", "Lunch on most days",
+                "Personal expenses and shopping", "Camera fees at monuments",
+                "Tips and gratuities"
+            ],
+            "faqs": [
+                {"q": "Which airport should I book for arrival and departure?", "a": "Arrive at Kozhikode (CCJ) and depart from Mangalore (IXE) for the most convenient route."},
+                {"q": "Is this tour suitable for families?", "a": "Yes, the itinerary is family-friendly with a good mix of history, nature, and beach time."},
+                {"q": "Can we extend the stay in Bekal?", "a": "Absolutely! Bekal's beaches are pristine and relaxing. We can arrange additional nights at the beach resort."}
+            ]
         },
     ],
     "testimonials": [
@@ -155,7 +531,7 @@ _fallback_db = {
         {"id": 8, "image_url": "/assets/munnar_tea_museum.png", "caption": "Munnar Tea Estate Garden", "source": "manual"},
     ],
     "contact_messages": [],
-    "_next_id": {"tours": 5, "testimonials": 4, "bookings": 1, "gallery": 11, "contact_messages": 1},
+    "_next_id": {"tours": 11, "testimonials": 4, "bookings": 1, "gallery": 11, "contact_messages": 1},
 }
 
 _fallback_gallery_instagram = []
